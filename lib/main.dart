@@ -1,30 +1,38 @@
 import 'package:flutter/material.dart';
+import 'city_map.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MaterialApp(
+      title: 'Navigation Basics',
+      home: Home(),
+    ));
 
-class MyApp extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const cities = ["Almaty", "Bishkek", "Chemnitz"];
-    return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Tuda'),
-        ),
-        backgroundColor: Color.fromARGB(0, 0, 0, 0),
-        body: Center(
-            child: ListView(
-          padding: const EdgeInsets.all(8),
-          children: cities.map(createCityCard).toList(),
-        )),
+    Function onTap = () {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => CityMap()));
+    };
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Tuda'),
       ),
+      backgroundColor: Color.fromARGB(0, 0, 0, 0),
+      body: Center(
+          child: ListView(
+        padding: const EdgeInsets.all(8),
+        children: cities.map((city) => createCityCard(city, onTap)).toList(),
+      )),
     );
   }
 
-  Widget createCityCard(String cityName) => Container(
+  Widget createCityCard(String cityName, Function onTap) => Container(
         child: GestureDetector(
-          onTap: () => debugPrint(cityName),
+          onTap: () {
+            onTap();
+            debugPrint(cityName);
+          },
           child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
