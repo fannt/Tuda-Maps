@@ -1,10 +1,17 @@
 final cities = [
-  City(name: "Almaty", imageName: "Almaty", lat: 42.8785619, long: 74.6017189),
   City(
-      name: "Bishkek", imageName: "Bishkek", lat: 42.8785619, long: 74.6017189),
+      name: "Almaty",
+      imageName: "Almaty.jpeg",
+      lat: 43.2405801,
+      long: 76.9201516),
+  City(
+      name: "Bishkek",
+      imageName: "Bishkek.jpeg",
+      lat: 42.8785619,
+      long: 74.6017189),
   City(
       name: "Chemnitz",
-      imageName: "Chemnitz",
+      imageName: "Chemnitz.jpeg",
       lat: 42.8785619,
       long: 74.6017189),
 ];

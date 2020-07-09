@@ -26,6 +26,9 @@ dependencies:
   # google_maps_flutter: ^0.5.28
   flutter_map: ^0.10.0
   latlong: ^0.6.1
+  flutter_svg: ^0.17.0
+  url_launcher: ^5.5.0
+  maps_launcher: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -49,9 +52,20 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/Almaty.jpeg
-    - images/Bishkek.jpeg
-    - images/Chemnitz.jpeg
+    - assets/Almaty.json
+
+    - assets/icons/pin.svg
+    
+    - assets/images/Almaty.jpeg
+    - assets/images/Bishkek.jpeg
+    - assets/images/Chemnitz.jpeg
+    - assets/images/Almaty_Arman_Cinema.jpg
+    - assets/images/Almaty_Kazakh_State_Academic_Drama_Theatre.jpg
+    - assets/images/Almaty_Kazakhstan_Hotel.jpg
+    - assets/images/Almaty_Musrepov_Childrens_Theater.jpg
+    - assets/images/Almaty_Palace_of_the_Republic.jpg
+    - assets/images/Almaty_Qyz_Zhibek.jpg
+    - assets/images/Almaty_Wedding_Palace.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

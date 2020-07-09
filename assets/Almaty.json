@@ -1,0 +1,65 @@
+[
+  {
+    "latitute": 43.2405801,
+    "longitude": 76.9201516,
+    "work_photo_name": "Almaty_Wedding_Palace",
+    "work_name": "Wedding Palace",
+    "architect": "Malbagar Mendikulov, Alexander Leppik",
+    "year_completed": 1971,
+    "address": "Abaya Avenue, 101a"
+  },
+  {
+    "latitute": 43.241423,
+    "longitude": 76.919967,
+    "work_photo_name": "Almaty_Qyz_Zhibek",
+    "work_name": "Qyz Zhibek",
+    "architect": "Nikolai Tsivchinskiy, Moldakhmet Kenbaev",
+    "year_completed": 1971,
+    "address": "Abaya Avenue, 101a"
+  },
+  {
+    "latitute": 43.2449317,
+    "longitude": 76.9576612,
+    "work_photo_name": "Almaty_Kazakhstan_Hotel",
+    "work_name": "Kazakhstan Hotel",
+    "architect": "Yuri Ratushniy, Lev Uhobotov, Arkadiy Deev",
+    "year_completed": 1977,
+    "address": "Dostyk Avenue, 52"
+  },
+  {
+    "latitute": 43.2432277,
+    "longitude": 76.9593441,
+    "work_photo_name": "Almaty_Palace_of_the_Republic",
+    "work_name": "Palace of the Republic",
+    "architect": "Vladimir Kim, Yury Ratushniy, Vladimir Alle, Nikolay Ripinskiy, Lev Uhobotov",
+    "year_completed": 1970,
+    "address": "Dostyk Avenue, 56"
+  },
+  {
+    "latitute": 43.2659864,
+    "longitude": 76.9412498,
+    "work_photo_name": "Almaty_Musrepov_Childrens_Theater",
+    "work_name": "Musrepov Children’s Theater",
+    "architect": "Alexander Leppik, Nikolai Ripinsky, Vladimir Katsev",
+    "year_completed": 1962,
+    "address": "Abylai Khan, 38"
+  },
+  {
+    "latitute": 43.2413949,
+    "longitude": 76.9181032,
+    "work_photo_name": "Almaty_Kazakh_State_Academic_Drama_Theatre",
+    "work_name": "Kazakh State Academic Drama Theatre",
+    "architect": "O. Baymurzaev, A. Kaynarbaev, M. Zhaksalykov",
+    "year_completed": 1980,
+    "address": "Abay Ave, 107"
+  },
+  {
+    "latitute": 43.2421813,
+    "longitude": 76.9576448,
+    "work_photo_name": "Almaty_Arman_Cinema",
+    "work_name": "Arman Cinema",
+    "architect": "Alexander Korzhempo, Innokentiy Slonov",
+    "year_completed": 1968,
+    "address": "Dostyk Avenue, 104"
+  }
+]

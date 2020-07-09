@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             onTap(city);
-            debugPrint(city.name);
+            // debugPrint(city.name);
           },
           child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -49,7 +49,7 @@ class Home extends StatelessWidget {
                   AspectRatio(
                     aspectRatio: 16 / 6,
                     child: Image.asset(
-                      "images/" + city.name + ".jpeg",
+                      "assets/images/" + city.imageName,
                       fit: BoxFit.cover,
                     ),
                   )
