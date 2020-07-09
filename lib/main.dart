@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'city_map.dart';
+import 'models.dart';
 
 void main() => runApp(MaterialApp(
       title: 'Navigation Basics',
@@ -9,10 +10,9 @@ void main() => runApp(MaterialApp(
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const cities = ["Almaty", "Bishkek", "Chemnitz"];
-    Function onTap = () {
+    Function onTap = (City city) {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => CityMap()));
+          context, MaterialPageRoute(builder: (context) => CityMap(city: city)));
     };
     return Scaffold(
       appBar: AppBar(
@@ -27,11 +27,11 @@ class Home extends StatelessWidget {
     );
   }
 
-  Widget createCityCard(String cityName, Function onTap) => Container(
+  Widget createCityCard(City city, Function(City) onTap) => Container(
         child: GestureDetector(
           onTap: () {
-            onTap();
-            debugPrint(cityName);
+            onTap(city);
+            debugPrint(city.name);
           },
           child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      cityName,
+                      city.name,
                       textAlign: TextAlign.left,
                       style:
                           TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
@@ -49,7 +49,7 @@ class Home extends StatelessWidget {
                   AspectRatio(
                     aspectRatio: 16 / 6,
                     child: Image.asset(
-                      "images/" + cityName + ".jpeg",
+                      "images/" + city.name + ".jpeg",
                       fit: BoxFit.cover,
                     ),
                   )
