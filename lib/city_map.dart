@@ -23,17 +23,21 @@ class Map extends StatelessWidget {
   final City city;
 
   Widget build(BuildContext context) {
-    final point = LatLng(42.8785619, 74.6017189);
+    final point = LatLng(city.lat, city.long);
     final markers = [
       Marker(
-        width: 80.0,
-        height: 80.0,
+        width: 100.0,
+        height: 100.0,
         point: point,
         builder: (ctx) => new Container(
-          child: Image.asset(
-            "images/" + city.imageName + ".jpeg",
-            // fit: BoxFit.cover,
-          ),
+          // child: ClipOval(
+            child: Image.asset(
+              "images/" + city.imageName + ".jpeg",
+              width: 100,
+              height: 100,
+              fit: BoxFit.cover,
+            ),
+          // ),
         ),
       ),
     ];
@@ -49,7 +53,7 @@ class Map extends StatelessWidget {
           subdomains: ['a', 'b', 'c'],
           // wmsOptions: WMSTileLayerOptions(
           //   baseUrl: "http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi",
-          //   // layers: ["nexrad-n0r-900913"], 
+          //   // layers: ["nexrad-n0r-900913"],
           //   // format: "image/png",
           //   // transparent: true,
           //   )

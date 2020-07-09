@@ -11,8 +11,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Function onTap = (City city) {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => CityMap(city: city)));
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => CityMap(city: city)));
     };
     return Scaffold(
       appBar: AppBar(
